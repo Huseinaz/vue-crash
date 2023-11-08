@@ -1,13 +1,22 @@
 <template>
     <footer>
         <p>Copyright &copy; 2023</p>
-        <router-link to="/about">About</router-link>
+        <router-link to="/about" v-show="homePage">About</router-link>
     </footer>
 </template>
 
 <script>
     export default {
-        
+        computed: {
+            homePage() {
+                if(this.$route.path === '/') {
+                    return true
+                }
+                else {
+                    return false
+                }
+            }
+        }
     }
 </script>
 

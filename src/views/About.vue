@@ -9,6 +9,8 @@
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+a {
+    color: #333;
+}
 </style>
